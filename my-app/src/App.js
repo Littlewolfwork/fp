@@ -1,6 +1,39 @@
 import logo from './logo.svg';
 import './App.css';
+import {findAllByDisplayValue} from "@testing-library/react";
 
+const App = () => {
+  return (
+      <div>
+        <Header />
+        <Technologies />
+      </div>
+  );
+}
+
+const Header = () => {
+  return (
+      <div>
+        <a href="">Home</a>
+        <a href="">News</a>
+        <a href="">Messages</a>
+      </div>
+  );
+}
+
+const Technologies = () => {
+  return (
+      <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JS</li>
+        <li>React</li>
+      </ul>
+  );
+}
+
+
+/*
 function App() {
   return (
     <div className="App">
@@ -21,5 +54,5 @@ function App() {
     </div>
   );
 }
-
+*/
 export default App;
